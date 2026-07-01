@@ -109,12 +109,22 @@ const Dashboard = () => {
                 </div>
 
               </div>
-            </div>  
+            </div>
           </div>
           <div className="lower-cards">
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
+            <div className="card">
+              <h3>Success Rate (24h)</h3>
+              <h1>93.6%
+              </h1>
+            </div>
+            <div className="card">
+              <h3>Avg Execution Time</h3>
+              <h1 id="exeTime">1.2s</h1>
+            </div>
+            <div className="card">
+              <h3>Most Active</h3>
+              <h1>WhatsApp Support</h1>
+            </div>
           </div>
         </div>
       </div>

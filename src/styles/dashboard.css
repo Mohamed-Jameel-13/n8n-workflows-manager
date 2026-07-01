@@ -144,7 +144,7 @@
 }
 
 .upper-cards p {
-    color: rgb(118, 120, 125);
+    color: rgb(156,163,175);
 }
 
 .middle-cards .card {
@@ -269,4 +269,26 @@
 .activity-status.failed {
     background: rgba(255, 77, 77, 0.15);
     color: #ff4d4d;
+}
+.lower-cards .card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.lower-cards h3,.lower-cards h1{
+    margin: 20px 40px -10px;
+}
+
+.lower-cards h1{
+    color: #00d26a;
+}
+
+#exeTime{
+    color: #a3e635  ;
+}
+
+.lower-cards h3{
+    color: rgb(156,163,175);
 }

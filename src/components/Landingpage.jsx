@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import heroImg from "../assets/hero.png";
 import { Zap } from "lucide-react";
-
+import { useNavigate } from "react-router-dom";
 import {
   faBarChart,
   faBars,
@@ -15,6 +15,7 @@ import {
 import { faGithub, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Landingpage = () => {
+  const navigate = useNavigate();
   return (
     <div className="landing-bg">
       <Navbar />
@@ -29,8 +30,8 @@ const Landingpage = () => {
           <br /> monitor, and debug from one unified dashboard.
         </h3>
         <div className="hero-btns">
-          <button className="btn-primary" onClick={Navigate('/')}>Start for free</button>
-          <button className="btn-secondary">View Dashboard</button>
+          <button className="btn-primary" onClick={() => navigate('/signup')}>Start for free</button>
+          <button className="btn-secondary" onClick={() => navigate('/dashboard')}>View Dashboard</button>
         </div>
         <img src={heroImg} alt="heroImg" />
         <section id="features">
@@ -228,7 +229,7 @@ const Landingpage = () => {
         </section>
         <footer>
           <div className="logo-footer">
-            <Zap  id="footer-logo" size={24} color="#a3e635" fill="#a3e635" />
+            <Zap id="footer-logo" size={24} color="#a3e635" fill="#a3e635" />
             <h2>AutoFlow</h2>
           </div>
           <div className="legal">
