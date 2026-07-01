@@ -1,0 +1,134 @@
+.sidebar-outer-wrap {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 225px;
+  gap: 20px;
+  border-right: 1px solid #444;
+}
+
+.logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+#logo {
+  font-family: "JetBrains Mono";
+  margin-bottom: 20px;
+  margin-left: -8px;
+  border: 1px solid black;
+}
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 10px;
+}
+.sidebar li {
+  font-family: "JetBrains Mono";
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#sidebar-navs {
+  text-decoration: none;
+  font-size: 16px;
+  color: #76787d;
+  font-weight: bold;
+}
+#nav-icons {
+  color: #666b77;
+}
+.sidebar h3 {
+  font-family: "JetBrains Mono";
+
+  font-size: small;
+}
+.sidebar button {
+  display: flex;
+}
+.settings {
+  display: flex;
+}
+#settings-logo {
+  font-family: "JetBrains Mono";
+  background-color: transparent;
+  text-align: center;
+  color: #666b77;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bolder;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.user-logo {
+  background-color: #a1e633;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: black;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.username {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  justify-content: center;
+}
+.settings {
+  font-family: "JetBrains Mono";
+
+  border: 1px solid #46484a;
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+.sidebar-outer-wrap{
+  position: fixed;
+   z-index: 10;
+}
+#plan-name {
+  font-family: "JetBrains Mono";
+  font-size: x-small;
+  color: #666b77;
+}
+.username p {
+  font-size: small;
+  font-family: "JetBrains Mono";
+  margin: 0;
+}
+
+.username p:first-child {
+  font-weight: bold;
+  color: #fff;
+}
+
+#horizo {
+  width: 100%;
+  margin-top: 190px;
+  border: none;
+  border-top: 1px solid #444;
+}
+#horizo1 {
+  width: 100%;
+  margin-top: -20px;
+  border: none;
+  border-top: 1px solid #444;
+}
