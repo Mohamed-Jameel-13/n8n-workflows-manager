@@ -29,7 +29,6 @@ export default function Automations() {
     <div className="dashboard-wrapper">
       <Sidebar />
       <div className="dashboard-container">
-        {/* Header */}
         <div className="header">
           <h3>Automations</h3>
           <div className="searchbar">
@@ -51,10 +50,8 @@ export default function Automations() {
           <Bell id="bell" />
         </div>
 
-        {/* Main Content Area */}
         <div className="analytics" style={{ padding: '80px 30px 30px' }}>
           
-          {/* Sub Header */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px' }}>
             <div>
               <h1 style={{ fontSize: '32px', fontWeight: 700, color: '#F9FAFB', margin: '0 0 4px', fontFamily: '"JetBrains Mono", monospace' }}>
@@ -79,10 +76,8 @@ export default function Automations() {
             </button>
           </div>
 
-          {/* Filter Bar */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px', flexWrap: 'wrap' }}>
             
-            {/* Search Input on Filter Bar */}
             <div style={{ position: 'relative', flex: '1', minWidth: '240px', maxWidth: '380px' }}>
               <Search
                 size={15}
@@ -114,7 +109,6 @@ export default function Automations() {
               )}
             </div>
 
-            {/* Filter Chips */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
               {filterTags.map((tag) => {
                 const active = activeFilter === tag.id;
@@ -153,7 +147,6 @@ export default function Automations() {
               })}
             </div>
 
-            {/* View Toggle */}
             <div
               style={{
                 display: 'flex',
@@ -192,7 +185,6 @@ export default function Automations() {
             </div>
           </div>
 
-          {/* Results Grid */}
           {filteredAutomations.length > 0 ? (
             <div 
               style={{
@@ -221,7 +213,6 @@ export default function Automations() {
             </div>
           )}
 
-          {/* Bottom Count */}
           {filteredAutomations.length > 0 && (
             <p style={{ marginTop: '16px', fontSize: '12px', color: '#6B7280', fontFamily: '"JetBrains Mono", monospace' }}>
               Showing {filteredAutomations.length} of {automations.length} automations

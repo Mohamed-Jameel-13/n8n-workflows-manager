@@ -17,7 +17,6 @@ export default function Activity() {
     <div className="dashboard-wrapper">
       <Sidebar />
       <div className="dashboard-container">
-        {/* Header */}
         <div className="header">
           <h3>Activity Log</h3>
           <div className="searchbar">
@@ -27,10 +26,8 @@ export default function Activity() {
           <Bell id="bell" />
         </div>
 
-        {/* Main Content Area */}
         <div className="analytics" style={{ padding: '80px 30px 30px' }}>
           
-          {/* Sub Header */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '32px' }}>
             <div>
               <h1 style={{ fontSize: '32px', fontWeight: 700, color: '#fff', letterSpacing: '-0.02em', margin: '0 0 4px', fontFamily: '"JetBrains Mono", monospace' }}>
@@ -53,7 +50,6 @@ export default function Activity() {
             </button>
           </div>
 
-          {/* Activity Table Card */}
           <div 
             className="glass-card" 
             style={{ 

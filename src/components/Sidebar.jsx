@@ -84,7 +84,6 @@ const Sidebar = () => {
         
         <hr id="horizo" style={{ marginTop: 'auto', marginBottom: '10px' }} />
         
-        {/* Settings Link */}
         {(() => {
           const active = isActive("/settings");
           return (
@@ -130,7 +129,6 @@ const Sidebar = () => {
           );
         })()}
 
-        {/* User Card */}
         <div className="settings">
           <p className="user-logo">JD</p>
           <div className="username">

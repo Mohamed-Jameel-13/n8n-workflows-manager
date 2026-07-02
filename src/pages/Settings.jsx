@@ -31,7 +31,6 @@ export default function Settings() {
     <div className="dashboard-wrapper">
       <Sidebar />
       <div className="dashboard-container">
-        {/* Header */}
         <div className="header">
           <h3>Settings</h3>
           <div className="searchbar">
@@ -41,17 +40,14 @@ export default function Settings() {
           <Bell id="bell" />
         </div>
 
-        {/* Main Content Area */}
         <div className="analytics" style={{ padding: '80px 30px 30px' }}>
           
           <div style={{ maxWidth: '720px' }}>
-            {/* Sub Header */}
             <div style={{ marginBottom: '32px' }}>
               <h2 style={{ fontSize: '32px', fontWeight: 700, color: '#F9FAFB', margin: '0 0 4px', fontFamily: '"JetBrains Mono", monospace' }}>Settings</h2>
               <p style={{ fontSize: '14px', color: '#9CA3AF', margin: 0 }}>Manage your account, workspace, and API credentials.</p>
             </div>
 
-            {/* Profile */}
             <section 
               className="glass-card" 
               style={{ 
@@ -169,7 +165,6 @@ export default function Settings() {
               </div>
             </section>
 
-            {/* Workspace */}
             <section 
               className="glass-card" 
               style={{ 
@@ -271,7 +266,6 @@ export default function Settings() {
               </div>
             </section>
 
-            {/* API Keys */}
             <section 
               className="glass-card" 
               style={{ 
@@ -400,7 +394,6 @@ export default function Settings() {
               </div>
             </section>
 
-            {/* Danger Zone */}
             <section 
               className="glass-card" 
               style={{ 
