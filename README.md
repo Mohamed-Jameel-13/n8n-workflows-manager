@@ -41,6 +41,19 @@ Built with **React 18** and **Vite** on the frontend, and **Spring Boot 3** with
 ## 📁 Repository Structure
 
 ```
+├── frontend/
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── components/     # Reusable UI components (AutomationCard, StatusBadge, TopBar, etc.)
+│   │   │   ├── pages/          # Views (Dashboard, AutomationsList, AutomationDetail, Workflows, Activity, Settings)
+│   │   │   ├── routes.jsx      # Client-side routing
+│   │   │   └── services/api.js # Unified API service layer
+│   │   ├── styles/             # Global styles and theme tokens
+│   │   └── main.jsx            # Application root entrypoint
+│   ├── index.html
+│   ├── package.json
+│   ├── postcss.config.mjs
+│   └── vite.config.ts
 ├── backend/
 │   ├── src/main/java/com/autoflow/
 │   │   ├── config/             # CORS and RestTemplate configuration
@@ -52,16 +65,9 @@ Built with **React 18** and **Vite** on the frontend, and **Spring Boot 3** with
 │   ├── src/main/resources/     # Configuration files (application.properties, schema-mysql.sql)
 │   ├── pom.xml                 # Maven configuration
 │   └── mvnw / mvnw.cmd         # Maven wrapper scripts
-├── src/
-│   ├── app/
-│   │   ├── components/         # Reusable UI components (AutomationCard, StatusBadge, TopBar, etc.)
-│   │   ├── pages/              # Views (Dashboard, AutomationsList, AutomationDetail, Workflows, Activity, Settings)
-│   │   ├── routes.jsx          # Client-side routing
-│   │   └── services/api.js     # Unified API service layer
-│   ├── styles/                 # Global styles and theme tokens
-│   └── main.jsx                # Application root entrypoint
-├── package.json
-└── vite.config.ts
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
 
 ---
@@ -112,9 +118,10 @@ The backend server starts on **`http://localhost:8080`**.
 
 ### 3. Frontend Installation & Startup
 
-1. From the project root directory, install npm dependencies:
+1. From the project directory, navigate to `frontend` and install dependencies:
 
 ```bash
+cd frontend
 npm install
 ```
 
