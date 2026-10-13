@@ -1,0 +1,122 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+* {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
+}
+
+.landing-font {
+  font-family: 'Fredoka', sans-serif !important;
+}
+
+.landing-bg {
+  position: relative;
+  background-color: #111;
+  overflow: hidden;
+}
+
+.landing-bg::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Add a glowing blur to mimic the screenshot */
+.landing-bg::after {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 80vw; height: 80vw;
+  background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0) 60%);
+  transform: translate(-50%, -50%);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure landing page content stays above the noise */
+.landing-content {
+  position: relative;
+  z-index: 1;
+}
+
+.glass-card {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.glass-button {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 14px 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.glass-button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #fff;
+}
+
+.glass-button-primary {
+  background-color: #a3e635;
+  color: #000;
+  border-color: #a3e635;
+}
+
+.glass-button-primary:hover {
+  background-color: #84cc16;
+  border-color: #84cc16;
+  box-shadow: 0 0 20px rgba(163, 230, 53, 0.4);
+}
+
+.glass-button-sm {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.glass-input {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.glass-input:focus {
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.glass-nav-link {
+  color: #9CA3AF;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.glass-nav-link:hover {
+  color: #fff;
+}
